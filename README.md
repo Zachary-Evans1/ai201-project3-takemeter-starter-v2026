@@ -37,6 +37,24 @@
 
 <!-- ═══════════════════════ UNIT 5 — THE BUILD ═══════════════════════ -->
 
+## Milestone 1 Notes
+
+# Community: r/pcgaming 
+
+# Link to community: https://www.reddit.com/r/pcgaming/
+
+# Candidate distinctions
+
+1. News posts: The title is usually the headline of an article, and the post body contains a link to an article on another website.
+
+2. Game trailers/ads: These usually contain an embedded video, and the title includes the game name and “Trailer.” Some announce that a game is available now and link to its store page.
+
+3. Self-written posts: These contain mostly original text and cover a variety of topics. Some also include pictures.
+
+4. Advertisements: These posts promote a company or product, sometimes unrelated to the subreddit’s main topic. Reddit marks some posts with an “Ad” label next to the username. Examples I noticed include posts from u/Netflix, u/Depop, and u/farmers insurance.
+
+---
+
 ## What This Does
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
