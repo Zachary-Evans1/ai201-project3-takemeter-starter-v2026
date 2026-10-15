@@ -72,31 +72,102 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `Gaming News`
 
-**Definition:**
+**Definition: Posts primarily sharing or discussing external news articles about video games, gaming companies, or the gaming industry.**
 
-**Example 1:**
->
+**Example 1: https://www.reddit.com/r/pcgaming/comments/1x5taw3/epic_games_vibe_coded_its_new_store_and_openly/**
 
-**Example 2:**
->
 
-### `label_two`
+> Epic Games vibe coded its new store and openly admits it while taking jabs at Steam and Gabe's yachts
 
-**Definition:**
+https://www.destructoid.com/epic-games-store-ai-vibe-coded/
 
-**Example 1:**
->
+Because making a functional, feature-rich software is too big of a deal. They even said "programming is hard." Lol, lmao even
 
-**Example 2:**
->
+**Example 2: https://www.reddit.com/r/pcgaming/comments/1x5y25k/jeff_kaplan_was_an_industry_icon_now_peers_ignore/**
+
+> Jeff Kaplan Was An Industry Icon, Now Peers Ignore His Emails: Ex-Overwatch Director Talks “Humbling” Reality Of Indie Dev
+
+https://www.gamespot.com/articles/jeff-kaplan-was-an-industry-icon-now-peers-ignore-his-emails-ex-overwatch-director-talks-humbling-reality-of-indie-dev/
+
+### `Game Trailers/Advertisements`
+
+**Definition: Posts primarily promoting a game or its release, including official trailers, promotional videos, and announcements that a game is available.**
+
+**Example 1: https://www.reddit.com/r/pcgaming/comments/1x51zgg/valor_mortis_is_available_now_on_steam/**
+
+> Valor Mortis is available now on Steam
+
+https://store.steampowered.com/app/2828710/Valor_Mortis/
+
+**Example 2: https://www.reddit.com/r/pcgaming/comments/1x5zqat/battlefield_6_game_of_the_year_edition_trailer/**
+
+> Battlefield 6: Game of the Year Edition Trailer
+
+https://www.youtube.com/watch?v=PeHxMayIpaI
+
+     >Go all-in on All-Out Warfare.
+
+     >The Battlefield 6 Game of the Year Edition delivers the most complete Battlefield experience.
+
+     >Fight across land, air, and sea on 20* maps with 70+ weapons, 30+ vehicles, and 700K+ Portal experiences.
+
+     >Hit the ground running with the Ultimate Shortcut Kit, giving you faster access to fully progressed weapons and attachments across all four classes, plus one season of Battlefield Pro.
+
+     >The Game of the Year Edition also includes the new Trusted Reserve Pax Support Soldier Skin and the Phantom Pack, featuring four soldier skins, two weapon packages, XP boosts, and more.
+
+     >*19 maps available at launch. The 20th map is planned for release on Nov. 10.
+
+### `Self-Written`
+
+**Definition: Posts primarily consisting of original text written by the Reddit user, rather than primarily sharing an external article or promotional material.**
+
+**Example 1: https://www.reddit.com/r/pcgaming/comments/1x61zme/heart_of_the_machine/**
+
+>Heart of the Machine
+
+Just wanted to share this very unique game as I was impressed. I just finished the Prologue and a few turns in Chapter 1. Its very engaging and the graphics gives me an isometric Cyberpunk 2077 vibe. RPG/some building/4X turn-based but very story-based so that's a good change for me. It seems very deep so far and has lit a new fire on my gaming as I have been feeling burnt-out for a while. Also on sale on Steam. Let me know what you think!
+
+**Example 2: https://www.reddit.com/r/pcgaming/comments/1x1t7os/nearly_7000_early_access_games_on_steam_havent/**
+
+>Nearly 7,000 Early Access games on Steam haven't been updated in over a year
+
+[image]
+
+Edit for clarity: these numbers are from a study I put together from public Steam data. The ~7,000 in the title are all games in Early Access on Steam right now that have Steam's "no update in over a year" note, most of them tiny games with almost no reviews. The chart is something else: what happened to the 10,141 bigger games (10+ reviews) that entered EA between 2013 and 2023. Most of those reached 1.0 and left Early Access, which is exactly why the store shelf looks so much worse than the outcomes.
+
+Early Access is a subject that moves people's emotions, so I wanted to check what actually happens to these games. Mostly the numbers matched what I assumed. The one thing I did not expect is that the majority actually get finished.
+
+- On 26 September 2026, 6,989 of the 12,320 Early Access games on Steam carried Steam's own note that the developers' last update was over a year ago.
+
+- Of the 10,141 games with at least 10 reviews that entered Early Access between 2013 and 2023, 26% were still in Early Access with no update for 12+ months, and 7% were removed from sale while still in Early Access.
+
+- After three years without a 1.0, only about one in five still got there within the next five years.
+
+- About seven in ten store pages that give a time estimate say a year or less. Of the games with 10+ reviews that entered at least a year before the data date, 31% reached full release within a year.
+
+- But of those same 10,141 games, 61% had reached full release by 26 September 2026 (51% counting every game, however few reviews). Finished games leave the Early Access list and most stalled ones stay on it, which is why the store looks worse than the outcomes.
+
+- 21 games are still being updated after more than ten years in Early Access, including Project Zomboid, BeamNG.drive and Universe Sandbox.
+
+The data only shows what happened to the games. It cannot see sales or why developers stopped.
+
+For me, Early Access is both a boon and a bane for the industry. Some amazing games have become truly big by seriously lifting off during EA (e.g. Valheim) - other games have been literally just a cash grab and failures. Curious where you all stand.
 
 ### The hardest boundary
 
-**Which two labels:**
+Post: https://www.reddit.com/r/pcgaming/comments/1x5bj88/valve_index_sunset/
 
-**The decision rule I used every time:**
+Valve Index Sunset
+
+https://store.steampowered.com/hardware/valveindex
+
+**Which two labels: `Gaming News` and `Game Trailers/Advertisements`**
+
+Why: The post announces that the Valve Index is no longer being produced, which would count as gaming news. However, it links to Valve's official store page, where remaining hardware is available for purchase, meaning it could also count as an advertisement.
+
+**The decision rule I used every time: If a post's primary purpose is to report a development or event in the gaming industry, it is Gaming News, even if it links to an official store page.  If its primary purpose is to promote a game, trailer, or release, it is Game Trailers/Advertisements, even if it includes factual information.**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
 
