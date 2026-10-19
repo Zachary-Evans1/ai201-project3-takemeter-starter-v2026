@@ -180,19 +180,19 @@ Why: The post announces that the Valve Index is no longer being produced, which 
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:r/pcgaming on reddit**
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
+**How I labelled them: I labeled all 200 posts myself without AI assistance.** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| Gaming News | 70 | 35% |
+| Game Trailers/Advertisements | 105 | 52.5% |
+| Self-Written | 25 | 12.5% |
+| **Total** | 200 | 100% |
 
 **Three hard cases**
 
@@ -201,25 +201,78 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **1.**
 > *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+> I've spent two years making a Doom-meets-Hotline Miami horror shooter named "BLOODVILLE" while in college, and it drops in two weeks.
 
+Hey everyone,
+
+For the last two years I've been balancing college and developing BLOODVILLE, and it officially launches on October 22nd.
+
+BLOODVILLE is a short first-person shooter where you play as Cane, a retired hitman dragged back into killing - and slowly losing his mind.
+
+What to expect:
+
+Satisfying Combat - Aggressive gunplay mixed with drop-kicks and crunchy melee.
+
+Tonal Whiplash - For every action-packed mission, there's a tense atmospheric/horror segment you must go through in order to progress.
+
+Original Soundtrack - A mix of heavy Nine Inch Nails-inspired combat tracks and slow ambient cuts, included for free with the game in digital format.
+
+You can check out the full gameplay trailer & Steam page here: LINK
+
+Happy to answer any questions!*
+> *Could have been:*
+> Game Trailers/Advertisements or Self-Written
+> *I chose, Game Trailers/Advertisements because:*
+> It's a post by a developer made to sell a game, with a link to the trailer and the steam page, so I felt like it fit more into Game Trailers/Advertisements. It reads like a store page.
 **2.**
 > *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+>The Black Pool is on sale for $5 for a few more hours, coop shooter roguelike with Returnal-esque vibes
+I had this game on my wishlist for a long time and bought it during this sale, wish I had got it sooner. I'm very impressed and enjoying it a lot so far. Returnal, Lovecraft, SCP, Risk of Rain 2 all come to mind.
 
+Its a 4 player coop 3rd person roguelike where you get to pick from 9 elements for your abilities, with each one having I think 6 variations, light attack, heavy attack, support, dash, jump, AOE buff. The elements each provide status effect bonuses as well, like filling the earth status makes the next damaging attack dealt double. You also get synergy unlocks between them.
+
+As roguelikes go, you get upgrades for the skills as you progress, which I've found diverse for what I've seen. Example, I took ice for my jump skill, which makes a platform under you (and for your teammates if you play coop, I'm solo). Then I got an upgrade that gave me 40% chance to refresh the "double jump" cooldown up to 4 times, so I could make a trail of ice platforms up to an optional area in a level for extra powerups. I got a sick chaos boomerang spell that got a stacking dmg buff if I caught it on the way back (it had a return targeting reticle to stand on).
+
+It's very bright and full of neon color illuminating fog, each element has its own color. The soundtrack is dark synth with an 80s vibe like Stranger Things.
+
+I don't have anyone to gush about the game to, so I'm doing it here. It's on sale for $5 for the next few hours and it'd be cool to see more joinable games in the matchmaking list.
+> *Could have been:*
+> Game Trailers/Advertisements or Self-Written
+> *I chose, Self-Written because:*
+> The main purpose is the poster's recommendation and experience with the game, rather than just announcing the game is now selling
 **3.**
 > *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
+> Planetside 2 devs fix months old crash bug after a user shows them a solution
 
+Ever since the "Auraximas" update in December 2025 the game has been plagued by a bug dubbed by the community as "flash or crash": Some short time after logging into the game or changing continents the game would crash without any error code. Not every player was affected but there are a lot of reports about this.
+
+A workaround was found by immediately spawning any vehicle (with the "Flash" quad bike being the cheapest) and sitting in there for 2-3 minutes (staying on the loadout/respawn screen apparently worked as well for some). (Playing on Linux instead of Windows would also prevent this - although there was a phase where this also happened to Linux players).
+
+However this could be a problem for new players as they are required to go through a tutorial where they may not be fast enough to get to the point of spawning a vehicle.
+
+While the devs released some patches where the bug was seemingly fixed, it would later get reintroduced. There were a lot of fingers pointed at a connection with the BattleEye anti-cheat system (maybe not the software itself but its implementation) but during an update in September it was noted that "at the moment, we do not see any evidence in our logs that the anti-cheat system is contributing to the current situation")
+
+Which brings us to last week, where a user did some debugging and seemingly found the root cause of the crash and presented a possible solution.
+
+The workaround is consistent with a timing race. Asset streaming, worker scheduling, graphics callbacks, and background exception traffic can all change the chance of an active dispatch overlapping the broken cleanup window.
+
+BattlEye is NOT the reason for the crash. BUT disabling it changes exception traffic and timing, which can make the race less likely for some players. The broken cleanup code is still inside the client either way.
+
+That's why one player crashes almost every login while another player rarely sees it.
+
+Fast forward to October 15th, where a hotfix is released that - as of now - fixes the bug. However with no credit being given. The devs haven't gone into detail either except one discord post saying: "we've looked it over but are not going to reveal specifics about it due to the sensitivity of the subject, but I can say it was not the solution the person had hoped".
+
+The same user who found it also compared the changes introduced with that new fix, concluding that:
+
+Based on that, I think it is very likely that my report helped them locate or confirm the bug, since I showed the exact line of code and the exact address causing the crash, which has been fixed in this patch.
+
+As said, they didn't copy my implementation. They fixed the same problem I reported in the way that worked with their own build and protection pipeline.
+
+I guess this may be another case where players fix the game for the developers.
+> *Could have been:*
+> Gaming News or Self-Written
+> *I chose, Gaming News because:*
+> Although it was written on Reddit and doesn't link to an external article, its written like a news article and does reports about a crash bug being fixed, so I decided it fit best in Gaming News.
 ---
 
 ## The Training Run
