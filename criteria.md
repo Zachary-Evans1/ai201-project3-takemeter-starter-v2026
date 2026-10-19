@@ -51,61 +51,59 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall Accuracy of 0.65
 
-<!-- Your criterion. It must name a number. -->
-
-
-
-**Why this target:**
+The model must achieve at least 0.65 accuracy across all three test seeds.
 
 
-
----
-
-## 2.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
+**Why this target: I chose 0.65 because its accurate enough to be a useful system while taking into account the overlap of my labels.**
 
 
 
 ---
 
-## 3.
+## 2. Minimum Per-label F1 of 0.55
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
+The model must achieve an F1 score of at least 0.55 for each of the three labels across all three seeds
 
 
 
----
-
-## 4.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
+**Why this target: I chose an F1 score of 0.55 for every label because I want the model to perform reasonably well across every label separately, rather than preforming well on one or two labels alone.**
 
 
 
 ---
 
-## 5.
+## 3. The maximum share of the dataset one label can share is 65%
 
-<!-- Your criterion. -->
+No single label may account for more than 65% of the labeled dataset.
+
+
+**Why this target: I chose a maximum of 65% because I want my dataset to have a decently balanced set of labels. I wanted this because it will help prove the model is actually useful by showing that it can recognize all three categories.**
 
 
 
-**Why this target:**
+---
+
+## 4. Consistency across seeds
+
+The difference between the highest and lowest overall accuracy across the three test seeds must be no greater than 0.10.
+
+
+
+**Why this target: I want the outcomes to be consistent with each other. This will show that the model can perform consistently through multiple runs rather than having large changes each time.**
+
+
+
+---
+
+## 5. No Duplicates in Dataset
+
+The dataset must contain zero duplicate post texts
+
+
+
+**Why this target: Duplicate posts don't often come up on online forums, but they do exist. Since I am getting my data from online forums, I need to make sure duplicates do not get into the dataset to make the analysis meaningful.**
 
 
 
