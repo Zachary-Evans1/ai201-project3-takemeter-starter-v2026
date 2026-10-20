@@ -189,8 +189,8 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 | Label | Count | Share |
 |---|---|---|
-| Gaming News | 70 | 35% |
-| Game Trailers/Advertisements | 105 | 52.5% |
+| Gaming News | 71 | 35.5% |
+| Game Trailers/Advertisements | 104 | 52% |
 | Self-Written | 25 | 12.5% |
 | **Total** | 200 | 100% |
 
@@ -279,13 +279,21 @@ I guess this may be another case where players fix the game for the developers.
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model: distilbert-base-uncased**
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings: 3 epochs, learning rate 2e-5, batch size 16, and maximum token length 128** <!-- epochs, learning rate, batch size, seed -->
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why: Nothing**
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
+**Split sizes: 139 training / 31 validation / 30 test.**
+Test split per-label counts:
+
+Gaming News: 11
+
+Game Trailers/Advertisements: 15
+
+Self-Written: 4
+<!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
 

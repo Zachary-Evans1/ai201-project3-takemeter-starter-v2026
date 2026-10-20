@@ -1,0 +1,220 @@
+text,label,note
+Shogun 2 remaster hits “overwhelmingly negative” reviews on Steam over AI and performance,Gaming News,cold
+Machinarium 2 on Steam,Game Trailers/Advertisements,
+"SteamOS on Your Phone Is Finally Here! Droid Deck With the latest version, you will be able to play Steam, GOG and Epic Games Store on your phone. You will need a phone with Snapdragon 8 and Adreno GPU to run Droid Deck.",Gaming News,
+Fortnite announced for Linux with kernel-level AC support,Gaming News,cold
+"What are games with great enemy variety? One thing I've realized over the past couple years is that enemy variety is essentially a make or break for me. If a game has fantastic of even decent enemy variety, I get hooked in fast. If enemy variety is near non-existent, I'm likely to drop the game fast.
+
+My favorite examples are FromSoft games. They definitely copy and paste some enemies (I think Elden Ring is the biggest culprit), but I love stumbling upon a new area and finding new enemies and coming up with new strategies to defeat them.",Self-Written,
+"Bloodborne PC project is getting forked to run other PS exclusives natively, and now God of War 3 can play at 240 fps with FSR support",Gaming News,
+"[Giveaway] Unclaimed Humble Bundle games Hello everyone,
+
+I have the following unclaimed Humble Bundle games (mostly because I already own them):
+
+Congratulations to the winners!
+
+Sonic Frontiers - u/ChubbyBearDaddy
+
+Nine Sols - u/Kymori
+
+SYSTEM SHOCK - u/fragmental
+
+SKER Ritual - u/The-Real-Hero
+
+Against the Storm - u/General_Georges
+
+Crysis 3 Remastered - u/SRINIVA7S
+
+Rogue Waters - u/Asaxii
+
+The Riftbreaker - u/PhilosopherOk1598
+
+Decktamer - u/voxelini
+
+Cataclismo - u/Filipi_7
+
+To enter, simply comment below your favorite game mechanic from any video game and your top 3 game picks from the list above. I'll be randomy select 10 winners tomorrow (Sunday, October 19th) at 8:30PM EST. Whichever winner responds first will get their pick of games (provided they haven't been claimed already).
+
+Good luck",Self-Written,
+"SILENT HILL: Townfall - Notice: Game Update (Patch 1.4.0) System Changes
+・Gameplay & AI Improvements for The Weight:
+
+- Grab attacks now deal heavy damage instead of causing instant death on Story Mode and Normal difficulties.
+
+- Searching behaviors have been improved to prevent The Weight from ‘camping’ in front of the player’s objective for long periods of time.
+
+- Searching behaviors have been improved to prevent The Weight from repeatedly searching the same location and remaining there for long periods of time.
+
+- Hunting behaviors have been improved to prevent The Weight from tracking the player too aggressively.
+
+・Gameplay & AI Improvements for enemies:
+
+- Enemy sensitivity to the sound of firearms has been reduced.
+
+- Enemy sensitivity to the sound of the player while running has been reduced.
+
+- Enemy sensitivity to the sound of the player entering a hiding space has been reduced.
+
+- The frequency of enemy counterattacks after successful player attacks during melee combat has been reduced.
+
+- With the exception of The Weight, grapple attempts from enemies while the player is actively blocking with a melee weapon have been removed.
+
+- Players are now given more time to react to enemies after escaping a grapple.
+
+・Puzzle Information Design Improvements
+
+- A collectible manual for the ""Remote Systems Control"" console that can be viewed for quick reference while operating the console has been added.
+
+- The pipe layout for the ""Aux Line"" puzzle has been updated to improve clarity.
+
+Bug Fixes
+・Fixed a progress-blocking issue in Part 5 where glass could prevent the player from entering the CEG Tower.
+
+・Fixed an issue in Part 5 where the names of the Projector Slides could incorrectly display the same name.
+
+・Fixed several areas where the player could go out of bounds and break the sequence of the game.
+
+・Fixed an issue where the Letterbox option would not be visible when playing on an ultrawide monitor.
+
+・Added missing key bindings for AZERTY keyboards.
+
+・Improved frame pacing and further reduced instances of streaming stutter.",Gaming News,
+"Gears of War: E-Day | Accolades Trailer >We hold the line.
+
+>We're Gears.
+
+>On behalf of The Coalition, thank you for playing and making this an incredible launch.",Game Trailers/Advertisements,
+"Wine (for Linux) might mark dgvoodoo2 as WONTFIX due to malicious and intentional sabotage by developer to not run via Wine User Nostalgia_Realm used GPT-6 Astra to decompile dgvoodoo2 to check crashing of the utility on Linux/Wine environments
+
+I used **GPT-6 Astra** to investigate the supplied dgVoodoo2 binaries. It identified the relevant code and produced a working fix in approximately **17 minutes**. I then personally confirmed that Snail Mail’s Tutorial renders and responds correctly with the patched DLL.
+
+The findings point to **a Wine-specific code path inside dgVoodoo2 as the cause of this regression**. No changes to Wine were needed to remove the reproduced crash.
+
+The relevant code does the following:
+
+1. Walks the process’s loaded-module list and locates `NTDLL.DLL` using an encoded name.
+2. Reads its export table directly and searches for names containing `wine_get`, such as `wine_get_version`.
+3. Conceals that substring comparison behind arithmetic and numeric constants, rather than a readable Wine-identification string.
+4. When Wine is detected, takes a path that skips clearing two graphics-state values. Redirecting execution to the normal clearing path removes the reproduced failure.
+
+This was confirmed in **2.82 and 2.87.5**. The corresponding check was absent from the supplied **2.8** D3D8/DDraw binaries. Every intervening release was not individually analysed, so this does not establish the exact release that first introduced it.
+
+The fix is very small once the affected DLLs are unpacked:
+
+- **2.82:** change one branch-displacement byte in each affected D3D8/DDraw DLL so that the state-clearing instructions also execute under Wine.
+- **2.87.5:** change one instruction byte per Wine-export detection routine so it returns “not detected.” There are **23 copies across 22 DLLs**, including both copies inside the ARM64X D3D9 DLL. The two D3DImm DLLs lack this check.
+
+With the original DLLs, Snail Mail crashes and a separate DirectDraw test fails during surface creation. With the patches, Snail Mail runs and the DirectDraw test passes drawing, pixel readback, and cleanup. DXVK was still needed for D3D11 translation.
+
+**I strongly suspect deliberate interference with Wine compatibility**, given the obfuscated Wine detection and the harmful path it selects. Intent cannot be established conclusively from this evidence alone, but the Wine detection itself, and its connection to the reproduced failure is concrete. The earlier comment’s more specific D3D12-pointer explanation was not independently established.
+He then continues
+
+About this bug report, I am not a coder. I cannot say with 100% certainty that this is a Wine issue. However, the evidence GPT-6 Astra produced seems to point to malice from Dege. He intentionally sabotaged his app to not run via Wine. I'd say this means we can close this bug report and make it a community effort to introduce an open source alternative that can do the same. I think that's a much better use of our time and AI compute ;)
+Has not happened yet but I believe it would happen in the future
+
+User Nostalgia_Realm also said he might provide patched dgvoodoo2 builds in his website
+
+Dege has a history with being against linux for a long time
+
+https://web.archive.org/web/20251111024553/http://dege.fw.hu/dgVoodoo2/ReadmeGeneral/#watchoutfor#watchoutfor
+
+r/pcgaming - Wine (for Linux) might mark dgvoodoo2 as WONTFIX due to malicious and intentional sabotage by developer to not run via Wine
+And also https://github.com/lutris/dgvoodoo2/issues/5#issuecomment-3520470529
+
+What to be expected, according to open source cancer-like development practices (it'd be nice to bet money on this):
+
+you keep it until your d7vk or whatever is in development, using MY stuff for reverse engineering the api implementation details (instead of an old win xp/7 machine, just to save yourself a lot of work, I mean, years of work), being paid by an ugly capitalist company, and then all the sect members and random clueless idiots will be ranting all over the net that you're the best
+
+then and only then you will ditch dgVoodoo, the ""propietary shit"", independently on what the quality of your crap is like
+
+but, in the meantime, at least anybody can read into how much you're being loved
+
+TLDR:
+
+dgvoodoo dev creates intentional sabotage in software code to not run on linux
+
+dev lies and crashes out on Lutris's github and his website about how sabotaged environments are inferior and because they cannot run newer versions of said software
+
+gets caught red-handed after a user decomped his software",Self-Written,
+"Warhammer 40,000: Boltgun 2 is available now on Steam",Game Trailers/Advertisements,
+"Deck Beasts | Next Fest Trailer Deck Beasts is in Steam Next Fest with a huge update - including Starters, and events system, and a ton of QOL changes.
+
+You can play the demo free now on Steam.",Game Trailers/Advertisements,
+"Tales of Eternia Remastered - Launch Trailer >Enjoy updated visuals, dynamic battles, unforgettable characters, and an epic journey to save two intertwined worlds.",Game Trailers/Advertisements,
+"Tidy Pills - Cozy Tidy game where you organize a Pharmacy, Steam Demo Out Hey everyone :)
+
+Game Name: Tidy Pills
+Steam Demo <----
+
+We've been working on a cozy tidy game where you work on organizing a pharmacy. Our demo just got out and we would appreciate ANY feedback you guys might have. Please let us know if you check it out :)",Game Trailers/Advertisements,
+"Gears of War: E-Day SteamOS compatibility If anyone is on the fence buying it for SteamOS - it works flawlessly on my AMD PC:
+
+-latest SteamOS stable (3.8.something), I left it at the default Proton (11.0-2)
+-7900 XT GPU, set to 4k with FSR 4 Performance, details all on Ultra -> 70-80 fps
+-the initial shader compilation took ~3 minutes on my Ryzen 9700X
+
+It even shows the Dualsense button icons and supports the touchpad after disabling Steam input; game video recording works; everything awesome so far.",Self-Written,
+Sony Sells off Dozens of XR Patents to Meta in Apparent Pullback from AR/VR Hardware,Gaming News,
+"Topdeck Automat, the auto-battler you're supposed to break, releases November 16! Hey folks! Topdeck Automat is our roguelike auto-battler where you break the game by building crazy chain reactions across hundreds of cards, a large variety of stackable modules and the special abilities of the 30 different characters.
+
+The game is a handmade indie effort by the same team of 2 who previously made the billiards roguelike Rack and Slay. We don't believe in taking AI shortcuts to creativity, so every piece of art and gameplay has been deliberately designed to be as fun, interesting and exciting as it can be.
+
+Demo out now, release November 16!
+The demo of the game is available right now via Steam and has just received a huge update, so please check it out if you're interested!
+
+Full version features:
+
+200+ cards with a free-form upgrade system
+
+100+ passive modules
+
+50 enemy types with special abilities, elite variants and a dozen bosses
+
+30 unlockable characters
+
+Daily challenges with game-changing run modifiers
+
+Extensive compendium to track your stats, progression, achievements
+
+Post-run ""performance test"" to record your ridiculous damage numbers
+
+For a tiny indie any bit of visibility counts, so it would mean the world to us if you took a peek! <3
+
+Steam: https://store.steampowered.com/app/4321920/Topdeck_Automat/",Game Trailers/Advertisements,cold
+Samira and Sett Gameplay Reveal Trailer | 2XKO,Game Trailers/Advertisements,
+"Crownfront brings RTS-style base building and resource management to turn-based strategy: try the free demo during Steam Next Fest Hi everyone, I’m the developer of Crownfront, a medieval strategy game that combines building a base, gathering resources and commanding an army with turn-based gameplay on a physical board-inspired battlefield.
+
+Crownfront is participating in Steam Next Fest, and the free demo is available now.
+
+https://store.steampowered.com/app/5105200/Crownfront_Demo/
+
+I’d love to hear how it feels to play, particularly whether the combat and turn-by-turn decisions are engaging. I’ll be around to answer questions!",Game Trailers/Advertisements,
+"Jeff Kaplan Was An Industry Icon, Now Peers Ignore His Emails: Ex-Overwatch Director Talks “Humbling” Reality Of Indie Dev",Gaming News,cold
+2026 Has Already Seen More Games Added To Steam Than All Of 2025,Gaming News,
+Drova II - Torn Lands on Steam,Game Trailers/Advertisements,
+Wyldheart | Demo Out Now - Trailer,Game Trailers/Advertisements,
+"BeamNG.drive v0.40 Release Notes - Local Split Screen, DLSS, FSR 3 & 4, Intel XeSS",Game Trailers/Advertisements,
+CDPR Has Taken 'Several Years' To Give Project Hadar a 'Coherent Vision',Gaming News,
+DAVE THE DIVER - Subnautica 2 Content Pack is coming to Steam in 2027,Game Trailers/Advertisements,
+Dragon's Dogma 2: Dark Arisen Expansion is available now on Steam,Game Trailers/Advertisements,
+"ACE COMBAT 8: WINGS OF THEVE - About ACE COMBAT ZERO: THE BELKAN WAR (tl:dr; ZERO becomes standalone soon) We would like to provide an update regarding our plans for the distribution of the pre-order bonus title, ACE COMBAT ZERO.
+
+Please note that this update applies only to players who obtained ACE COMBAT ZERO as a pre-order bonus.
+
+Players who do not already own the pre-order bonus will not be able to newly obtain ACE COMBAT ZERO through this change.
+
+Currently, ACE COMBAT ZERO is available by launching and playing it through ACE COMBAT™ 8: WINGS OF THEVE.
+
+We are pleased to share that ACE COMBAT ZERO will be made available as a standalone application on Steam.
+
+We are currently conducting final quality assurance and compatibility testing in preparation for its release.
+
+Once this update is implemented, players will be able to access both the existing version of ACE COMBAT ZERO played through ACE COMBAT™ 8: WINGS OF THEVE and the standalone application version of ACE COMBAT ZERO.
+
+In addition, we expect save data to be shared between both versions through Steam Cloud functionality.
+
+We will provide further details regarding the release schedule and distribution method once our final verification process has been completed.
+
+We appreciate your continued patience and support.",Gaming News,
+KINGDOM HEARTS Collection [I ~ III] Launch Trailer,Game Trailers/Advertisements,
+"Microsoft is considering making Fallout, The Elder Scrolls, and even Minecraft Xbox console exclusive — surveys detailed",Gaming News,cold
