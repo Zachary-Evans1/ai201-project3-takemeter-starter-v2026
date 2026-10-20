@@ -39,11 +39,11 @@
 
 ## Milestone 1 Notes
 
-# Community: r/pcgaming 
+### Community: r/pcgaming 
 
-# Link to community: https://www.reddit.com/r/pcgaming/
+### Link to community: https://www.reddit.com/r/pcgaming/
 
-# Candidate distinctions
+### Candidate distinctions
 
 1. News posts: The title is usually the headline of an article, and the post body contains a link to an article on another website.
 
@@ -60,7 +60,7 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-
+TakeMeter classifies Reddit posts from r/pcgaming into three categories: Gaming News, Game Trailers/Advertisements, and Self-Written. The goal of TakeMeter is to see how well a machine learning model can distinguish between these types of posts based on the examples I gave it to learn from.
 
 ---
 
@@ -312,17 +312,17 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for: I asked ChatGPT to help me understand what an F1 score was.*
+- *What came back: It explained how the F! score worked.*
+- *What I changed: I made my second criteria based on the F1 score for each label.*
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for: I asked ChatGPT for a way to label the posts easier than writing them into a csv file directly.*
+- *What came back: It told me to use Microsoft Excel, as you can convert an Excel file to a comma-delimited CSV file.*
+- *What I changed: I did all the labeling in Excel then converted it to a CSV file, and moved that file into the project folder.*
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:I did not use the AI to label the posts. I labeled all 200 posts manually.**
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
