@@ -279,6 +279,8 @@ I guess this may be another case where players fix the game for the developers.
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
+**Device and Torch Version: CPU, 2.14.1+cpu**
+
 **Base model: distilbert-base-uncased**
 
 **Settings: 3 epochs, learning rate 2e-5, batch size 16, and maximum token length 128. Seed: 42** <!-- epochs, learning rate, batch size, seed -->
@@ -313,7 +315,7 @@ of next unit's variance. -->
 **Moment 1**
 
 - *What I asked for: I asked ChatGPT to help me understand what an F1 score was.*
-- *What came back: It explained how the F! score worked.*
+- *What came back: It explained how the F1 score worked.*
 - *What I changed: I made my second criteria based on the F1 score for each label.*
 
 **Moment 2**
@@ -322,7 +324,7 @@ of next unit's variance. -->
 - *What came back: It told me to use Microsoft Excel, as you can convert an Excel file to a comma-delimited CSV file.*
 - *What I changed: I did all the labeling in Excel then converted it to a CSV file, and moved that file into the project folder.*
 
-**Pre-labelling disclosure:I did not use the AI to label the posts. I labeled all 200 posts manually.**
+**Pre-labelling disclosure: I did not use the AI to label the posts. I labeled all 200 posts manually.**
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
