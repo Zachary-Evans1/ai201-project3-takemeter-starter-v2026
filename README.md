@@ -182,7 +182,7 @@ Why: The post announces that the Valve Index is no longer being produced, which 
 
 **Where the posts came from:r/pcgaming on reddit**
 
-**How I labelled them: I labeled all 200 posts myself without AI assistance.** <!-- Cold first? Pre-labelled with AI and corrected?
+**How I labelled them: I labeled all 200 posts myself without AI assistance, I sorted the posts by newest and did the first 200 posts that showed up from there.** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
 
 **Counts per label:**
@@ -281,7 +281,7 @@ I guess this may be another case where players fix the game for the developers.
 
 **Base model: distilbert-base-uncased**
 
-**Settings: 3 epochs, learning rate 2e-5, batch size 16, and maximum token length 128** <!-- epochs, learning rate, batch size, seed -->
+**Settings: 3 epochs, learning rate 2e-5, batch size 16, and maximum token length 128. Seed: 42** <!-- epochs, learning rate, batch size, seed -->
 
 **Anything I changed from the defaults, and why: Nothing**
 
