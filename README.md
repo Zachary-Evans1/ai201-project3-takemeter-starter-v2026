@@ -340,16 +340,17 @@ of next unit's variance. -->
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.633 | 0.500 | -0.133 |
+| Macro F1 | 0.534 | 0.222 | -0.312 |
+| F1 — `Game Trailers/Advertisements` | 0.769 | 0.667 | -0.103 |
+| F1 — `Gaming News` | 0.167 | 0.000 | -0.167 |
+| F1 — `Self-Written` | 0.667 | 0.000 | -0.667 |
 
-**What I predicted before I looked:**
+**What I predicted before I looked: I predict that my trained model will do better on the `Gaming News` and `Game Trailers/Advertisements` labels, but be worse on the `Self-Written` label.**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 
-**What the gap actually means:**
+**What the gap actually means: The baseline performed better than my trained model on this test set in every measure. This suggests that the fine-tuning did not improve performance in this run.**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
 

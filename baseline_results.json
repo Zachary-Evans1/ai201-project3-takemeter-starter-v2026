@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": false,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.6,
+    "f1_macro": 0.5135955831608006,
+    "per_label": {
+      "Game Trailers/Advertisements": {
+        "precision": 0.7333333333333333,
+        "recall": 0.7333333333333333,
+        "f1": 0.7333333333333333,
+        "support": 15
+      },
+      "Gaming News": {
+        "precision": 0.5,
+        "recall": 0.5454545454545454,
+        "f1": 0.5217391304347826,
+        "support": 11
+      },
+      "Self-Written": {
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1": 0.28571428571428575,
+        "support": 4
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Shogun 2 remaster hits \u201coverwhelmingly negative\u201d reviews on Steam over AI and performance",
+      "gold": "Gaming News",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "Machinarium 2 on Steam",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "SteamOS on Your Phone Is Finally Here! Droid Deck With the latest version, you will be able to play Steam, GOG and Epic Games Store on your phone. You will need a phone with Snapdragon 8 and Adreno GPU to run Droid Deck.",
+      "gold": "Gaming News",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Fortnite announced for Linux with kernel-level AC support",
+      "gold": "Gaming News",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "What are games with great enemy variety? One thing I've realized over the past couple years is that enemy variety is essentially a make or break for me. If a game has fantastic of even decent enemy variety, I get hooked in fast. If enemy variety is near non-existent, I'm likely to drop the game fast.\n\nMy favorite examples are FromSoft games. They definitely copy and paste some enemies (I think Elden Ring is the biggest culprit), but I love stumbling upon a new area and finding new enemies and coming up with new strategies to defeat them.",
+      "gold": "Self-Written",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "Bloodborne PC project is getting forked to run other PS exclusives natively, and now God of War 3 can play at 240 fps with FSR support",
+      "gold": "Gaming News",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "[Giveaway] Unclaimed Humble Bundle games Hello everyone,\n\nI have the following unclaimed Humble Bundle games (mostly because I already own them):\n\nCongratulations to the winners!\n\nSonic Frontiers - u/ChubbyBearDaddy\n\nNine Sols - u/Kymori\n\nSYSTEM SHOCK - u/fragmental\n\nSKER Ritual - u/The-Real-Hero\n\nAgainst the Storm - u/General_Georges\n\nCrysis 3 Remastered - u/SRINIVA7S\n\nRogue Waters - u/Asaxii\n\nThe Riftbreaker - u/PhilosopherOk1598\n\nDecktamer - u/voxelini\n\nCataclismo - u/Filipi_7\n\nTo enter, simply comment below your favorite game mechanic from any video game and your top 3 game picks from the list above. I'll be randomy select 10 winners tomorrow (Sunday, October 19th) at 8:30PM EST. Whichever winner responds first will get their pick of games (provided they haven't been claimed already).\n\nGood luck",
+      "gold": "Self-Written",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "SILENT HILL: Townfall - Notice: Game Update (Patch 1.4.0) System Changes\n\u30fbGameplay & AI Improvements for The Weight:\n\n- Grab attacks now deal heavy damage instead of causing instant death on Story Mode and Normal difficulties.\n\n- Searching behaviors have been improved to prevent The Weight from \u2018camping\u2019 in front of the player\u2019s objective for long periods of time.\n\n- Searching behaviors have been improved to prevent The Weight from repeatedly searching the same location and remaining there for long periods of time.\n\n- Hunting behaviors have been improved to prevent The Weight from tracking the player too aggressively.\n\n\u30fbGameplay & AI Improvements for enemies:\n\n- Enemy sensitivity to the sound of firearms has been reduced.\n\n- Enemy sensitivity to the sound of the player while running has been reduced.\n\n- Enemy sensitivity to the sound of the player entering a hiding space has been reduced.\n\n- The frequency of enemy counterattacks after successful player attacks during melee combat has been reduced.\n\n- With the exception of The Weight, grapple attempts from enemies while the player is actively blocking with a melee weapon have been removed.\n\n- Players are now given more time to react to enemies after escaping a grapple.\n\n\u30fbPuzzle Information Design Improvements\n\n- A collectible manual for the \"Remote Systems Control\" console that can be viewed for quick reference while operating the console has been added.\n\n- The pipe layout for the \"Aux Line\" puzzle has been updated to improve clarity.\n\nBug Fixes\n\u30fbFixed a progress-blocking issue in Part 5 where glass could prevent the player from entering the CEG Tower.\n\n\u30fbFixed an issue in Part 5 where the names of the Projector Slides could incorrectly display the same name.\n\n\u30fbFixed several areas where the player could go out of bounds and break the sequence of the game.\n\n\u30fbFixed an issue where the Letterbox option would not be visible when playing on an ultrawide monitor.\n\n\u30fbAdded missing key bindings for AZERTY keyboards.\n\n\u30fbImproved frame pacing and further reduced instances of streaming stutter.",
+      "gold": "Gaming News",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "Gears of War: E-Day | Accolades Trailer >We hold the line.\n\n>We're Gears.\n\n>On behalf of The Coalition, thank you for playing and making this an incredible launch.",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Wine (for Linux) might mark dgvoodoo2 as WONTFIX due to malicious and intentional sabotage by developer to not run via Wine User Nostalgia_Realm used GPT-6 Astra to decompile dgvoodoo2 to check crashing of the utility on Linux/Wine environments\n\nI used **GPT-6 Astra** to investigate the supplied dgVoodoo2 binaries. It identified the relevant code and produced a working fix in approximately **17 minutes**. I then personally confirmed that Snail Mail\u2019s Tutorial renders and responds correctly with the patched DLL.\n\nThe findings point to **a Wine-specific code path inside dgVoodoo2 as the cause of this regression**. No changes to Wine were needed to remove the reproduced crash.\n\nThe relevant code does the following:\n\n1. Walks the process\u2019s loaded-module list and locates `NTDLL.DLL` using an encoded name.\n2. Reads its export table directly and searches for names containing `wine_get`, such as `wine_get_version`.\n3. Conceals that substring comparison behind arithmetic and numeric constants, rather than a readable Wine-identification string.\n4. When Wine is detected, takes a path that skips clearing two graphics-state values. Redirecting execution to the normal clearing path removes the reproduced failure.\n\nThis was confirmed in **2.82 and 2.87.5**. The corresponding check was absent from the supplied **2.8** D3D8/DDraw binaries. Every intervening release was not individually analysed, so this does not establish the exact release that first introduced it.\n\nThe fix is very small once the affected DLLs are unpacked:\n\n- **2.82:** change one branch-displacement byte in each affected D3D8/DDraw DLL so that the state-clearing instructions also execute under Wine.\n- **2.87.5:** change one instruction byte per Wine-export detection routine so it returns \u201cnot detected.\u201d There are **23 copies across 22 DLLs**, including both copies inside the ARM64X D3D9 DLL. The two D3DImm DLLs lack this check.\n\nWith the original DLLs, Snail Mail crashes and a separate DirectDraw test fails during surface creation. With the patches, Snail Mail runs and the DirectDraw test passes drawing, pixel readback, and cleanup. DXVK was still needed for D3D11 translation.\n\n**I strongly suspect deliberate interference with Wine compatibility**, given the obfuscated Wine detection and the harmful path it selects. Intent cannot be established conclusively from this evidence alone, but the Wine detection itself, and its connection to the reproduced failure is concrete. The earlier comment\u2019s more specific D3D12-pointer explanation was not independently established.\nHe then continues\n\nAbout this bug report, I am not a coder. I cannot say with 100% certainty that this is a Wine issue. However, the evidence GPT-6 Astra produced seems to point to malice from Dege. He intentionally sabotaged his app to not run via Wine. I'd say this means we can close this bug report and make it a community effort to introduce an open source alternative that can do the same. I think that's a much better use of our time and AI compute ;)\nHas not happened yet but I believe it would happen in the future\n\nUser Nostalgia_Realm also said he might provide patched dgvoodoo2 builds in his website\n\nDege has a history with being against linux for a long time\n\nhttps://web.archive.org/web/20251111024553/http://dege.fw.hu/dgVoodoo2/ReadmeGeneral/#watchoutfor#watchoutfor\n\nr/pcgaming - Wine (for Linux) might mark dgvoodoo2 as WONTFIX due to malicious and intentional sabotage by developer to not run via Wine\nAnd also https://github.com/lutris/dgvoodoo2/issues/5#issuecomment-3520470529\n\nWhat to be expected, according to open source cancer-like development practices (it'd be nice to bet money on this):\n\nyou keep it until your d7vk or whatever is in development, using MY stuff for reverse engineering the api implementation details (instead of an old win xp/7 machine, just to save yourself a lot of work, I mean, years of work), being paid by an ugly capitalist company, and then all the sect members and random clueless idiots will be ranting all over the net that you're the best\n\nthen and only then you will ditch dgVoodoo, the \"propietary shit\", independently on what the quality of your crap is like\n\nbut, in the meantime, at least anybody can read into how much you're being loved\n\nTLDR:\n\ndgvoodoo dev creates intentional sabotage in software code to not run on linux\n\ndev lies and crashes out on Lutris's github and his website about how sabotaged environments are inferior and because they cannot run newer versions of said software\n\ngets caught red-handed after a user decomped his software",
+      "gold": "Self-Written",
+      "predicted": "Self-Written"
+    },
+    {
+      "text": "Warhammer 40,000: Boltgun 2 is available now on Steam",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "Deck Beasts | Next Fest Trailer Deck Beasts is in Steam Next Fest with a huge update - including Starters, and events system, and a ton of QOL changes.\n\nYou can play the demo free now on Steam.",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Tales of Eternia Remastered - Launch Trailer >Enjoy updated visuals, dynamic battles, unforgettable characters, and an epic journey to save two intertwined worlds.",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Tidy Pills - Cozy Tidy game where you organize a Pharmacy, Steam Demo Out Hey everyone :)\n\nGame Name: Tidy Pills\nSteam Demo <----\n\nWe've been working on a cozy tidy game where you work on organizing a pharmacy. Our demo just got out and we would appreciate ANY feedback you guys might have. Please let us know if you check it out :)",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Gears of War: E-Day SteamOS compatibility If anyone is on the fence buying it for SteamOS - it works flawlessly on my AMD PC:\n\n-latest SteamOS stable (3.8.something), I left it at the default Proton (11.0-2)\n-7900 XT GPU, set to 4k with FSR 4 Performance, details all on Ultra -> 70-80 fps\n-the initial shader compilation took ~3 minutes on my Ryzen 9700X\n\nIt even shows the Dualsense button icons and supports the touchpad after disabling Steam input; game video recording works; everything awesome so far.",
+      "gold": "Self-Written",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Sony Sells off Dozens of XR Patents to Meta in Apparent Pullback from AR/VR Hardware",
+      "gold": "Gaming News",
+      "predicted": "Self-Written"
+    },
+    {
+      "text": "Topdeck Automat, the auto-battler you're supposed to break, releases November 16! Hey folks! Topdeck Automat is our roguelike auto-battler where you break the game by building crazy chain reactions across hundreds of cards, a large variety of stackable modules and the special abilities of the 30 different characters.\n\nThe game is a handmade indie effort by the same team of 2 who previously made the billiards roguelike Rack and Slay. We don't believe in taking AI shortcuts to creativity, so every piece of art and gameplay has been deliberately designed to be as fun, interesting and exciting as it can be.\n\nDemo out now, release November 16!\nThe demo of the game is available right now via Steam and has just received a huge update, so please check it out if you're interested!\n\nFull version features:\n\n200+ cards with a free-form upgrade system\n\n100+ passive modules\n\n50 enemy types with special abilities, elite variants and a dozen bosses\n\n30 unlockable characters\n\nDaily challenges with game-changing run modifiers\n\nExtensive compendium to track your stats, progression, achievements\n\nPost-run \"performance test\" to record your ridiculous damage numbers\n\nFor a tiny indie any bit of visibility counts, so it would mean the world to us if you took a peek! <3\n\nSteam: https://store.steampowered.com/app/4321920/Topdeck_Automat/",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Samira and Sett Gameplay Reveal Trailer | 2XKO",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Crownfront brings RTS-style base building and resource management to turn-based strategy: try the free demo during Steam Next Fest Hi everyone, I\u2019m the developer of Crownfront, a medieval strategy game that combines building a base, gathering resources and commanding an army with turn-based gameplay on a physical board-inspired battlefield.\n\nCrownfront is participating in Steam Next Fest, and the free demo is available now.\n\nhttps://store.steampowered.com/app/5105200/Crownfront_Demo/\n\nI\u2019d love to hear how it feels to play, particularly whether the combat and turn-by-turn decisions are engaging. I\u2019ll be around to answer questions!",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Jeff Kaplan Was An Industry Icon, Now Peers Ignore His Emails: Ex-Overwatch Director Talks \u201cHumbling\u201d Reality Of Indie Dev",
+      "gold": "Gaming News",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "2026 Has Already Seen More Games Added To Steam Than All Of 2025",
+      "gold": "Gaming News",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "Drova II - Torn Lands on Steam",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Wyldheart | Demo Out Now - Trailer",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "BeamNG.drive v0.40 Release Notes - Local Split Screen, DLSS, FSR 3 & 4, Intel XeSS",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "CDPR Has Taken 'Several Years' To Give Project Hadar a 'Coherent Vision'",
+      "gold": "Gaming News",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "DAVE THE DIVER - Subnautica 2 Content Pack is coming to Steam in 2027",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "Dragon's Dogma 2: Dark Arisen Expansion is available now on Steam",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Gaming News"
+    },
+    {
+      "text": "ACE COMBAT 8: WINGS OF THEVE - About ACE COMBAT ZERO: THE BELKAN WAR (tl:dr; ZERO becomes standalone soon) We would like to provide an update regarding our plans for the distribution of the pre-order bonus title, ACE COMBAT ZERO.\n\nPlease note that this update applies only to players who obtained ACE COMBAT ZERO as a pre-order bonus.\n\nPlayers who do not already own the pre-order bonus will not be able to newly obtain ACE COMBAT ZERO through this change.\n\nCurrently, ACE COMBAT ZERO is available by launching and playing it through ACE COMBAT\u2122 8: WINGS OF THEVE.\n\nWe are pleased to share that ACE COMBAT ZERO will be made available as a standalone application on Steam.\n\nWe are currently conducting final quality assurance and compatibility testing in preparation for its release.\n\nOnce this update is implemented, players will be able to access both the existing version of ACE COMBAT ZERO played through ACE COMBAT\u2122 8: WINGS OF THEVE and the standalone application version of ACE COMBAT ZERO.\n\nIn addition, we expect save data to be shared between both versions through Steam Cloud functionality.\n\nWe will provide further details regarding the release schedule and distribution method once our final verification process has been completed.\n\nWe appreciate your continued patience and support.",
+      "gold": "Gaming News",
+      "predicted": "Self-Written"
+    },
+    {
+      "text": "KINGDOM HEARTS Collection [I ~ III] Launch Trailer",
+      "gold": "Game Trailers/Advertisements",
+      "predicted": "Game Trailers/Advertisements"
+    },
+    {
+      "text": "Microsoft is considering making Fallout, The Elder Scrolls, and even Minecraft Xbox console exclusive \u2014 surveys detailed",
+      "gold": "Gaming News",
+      "predicted": "Gaming News"
+    }
+  ]
+}
