@@ -1,0 +1,164 @@
+[
+  {
+    "seed": 42,
+    "n_test": 30,
+    "accuracy": 0.5,
+    "f1_macro": 0.2222222222222222,
+    "per_label": {
+      "Gaming News": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "Game Trailers/Advertisements": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "support": 15
+      },
+      "Self-Written": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4
+      }
+    },
+    "confusion": {
+      "Gaming News": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 11,
+        "Self-Written": 0
+      },
+      "Game Trailers/Advertisements": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 15,
+        "Self-Written": 0
+      },
+      "Self-Written": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 4,
+        "Self-Written": 0
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.5428264737129211,
+      "mean_when_wrong": 0.47805336117744446,
+      "accuracy_most_confident_third": 0.8,
+      "accuracy_least_confident_third": 0.1,
+      "n_per_third": 10
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  },
+  {
+    "seed": 7,
+    "n_test": 30,
+    "accuracy": 0.5333333333333333,
+    "f1_macro": 0.2828282828282828,
+    "per_label": {
+      "Gaming News": {
+        "precision": 1.0,
+        "recall": 0.09090909090909091,
+        "f1": 0.16666666666666666,
+        "support": 11
+      },
+      "Game Trailers/Advertisements": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1": 0.6818181818181818,
+        "support": 15
+      },
+      "Self-Written": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4
+      }
+    },
+    "confusion": {
+      "Gaming News": {
+        "Gaming News": 1,
+        "Game Trailers/Advertisements": 10,
+        "Self-Written": 0
+      },
+      "Game Trailers/Advertisements": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 15,
+        "Self-Written": 0
+      },
+      "Self-Written": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 4,
+        "Self-Written": 0
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.5077177286148071,
+      "mean_when_wrong": 0.4760037958621979,
+      "accuracy_most_confident_third": 0.9,
+      "accuracy_least_confident_third": 0.3,
+      "n_per_third": 10
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  },
+  {
+    "seed": 2024,
+    "n_test": 30,
+    "accuracy": 0.5,
+    "f1_macro": 0.2222222222222222,
+    "per_label": {
+      "Gaming News": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "Game Trailers/Advertisements": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "support": 15
+      },
+      "Self-Written": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4
+      }
+    },
+    "confusion": {
+      "Gaming News": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 11,
+        "Self-Written": 0
+      },
+      "Game Trailers/Advertisements": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 15,
+        "Self-Written": 0
+      },
+      "Self-Written": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 4,
+        "Self-Written": 0
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.5789029002189636,
+      "mean_when_wrong": 0.4964390993118286,
+      "accuracy_most_confident_third": 0.9,
+      "accuracy_least_confident_third": 0.0,
+      "n_per_third": 10
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  }
+]

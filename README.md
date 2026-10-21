@@ -360,29 +360,44 @@ of next unit's variance. -->
 
 ## Run Log — Before
 
+
+### Spread Table from the notebook.
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.500 | 0.533 | 0.500 | 0.033 |
+| Macro F1 | 0.222 | 0.283 | 0.222 | 0.061 |
+| F1 — `Gaming News` | 0.000 | 0.167 | 0.000 | 0.167 |
+| F1 — `Game Trailers/Advertisements` | 0.667 | 0.682 | 0.667 | 0.015 |
+| F1 — `Self-Written` | 0.000 | 0.000 | 0.000 | 0.000 |
+
+Accuracy moved 0.033 across seeds. Stable enough to trust.
+
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall Accuracy of 0.65 | Accuracy >= 0.65 | 0.500 | 0.533 | 0.500 | MISS |
+| 2. Minimum Per-label F1 of 0.55 | F1 Per Label >= 0.55 | Not all pass | Not all pass | Not all pass | MISS |
+| 3. The maximum share of the dataset one label can share is 65% | 65% or Max of 130 posts per label | Max was 105 | - | - | MET |
+| 4. Consistency across seeds | Accuracy spread ≤ 0.10 | 0.033 | 0.033 | 0.033 | MET |
+| 5. No Duplicates in Dataset | No Duplicate Posts | PASS | - | - | MET |
+
+*Criteria 3 and 5 are dataset checks, so their results do not change across seeds.*
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | Gaming News | Game Trailers/Advertisements | Self-Written |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **Gaming News** | 0 | 11 | 0 |
+| **Game Trailers/Advertisements** | 0 | 15 | 0 |
+| **Self-Written** | 0 | 4 | 0 |
 
-**My biggest off-diagonal number, and what it means:**
+**My biggest off-diagonal number, and what it means: My biggest off-diagonal number was 11. 11 actual Gaming News Posts were labeled as Game Trailers/Advertisements. It seems the model might only be predicting things as Game Trailers/Advertisements, at least for seed 42.**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
