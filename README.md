@@ -442,7 +442,7 @@ Accuracy moved 0.033 across seeds. Stable enough to trust.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 25 / 30 = 83%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -466,23 +466,50 @@ Accuracy moved 0.033 across seeds. Stable enough to trust.
 
 **1.**
 > *The post:*
->
+>I tracked sleep against session quality for eleven weeks. Under seven hours the next day's intervals were 6-8 seconds per mile slower, every time bar one. Small sample, one runner, but it's consistent enough that I've stopped scheduling hard days after late shifts.
 > *Staff said / I said:*
->
+> analysis / reaction
 > *My call, and why:*
->
-> *Which pile:*
+> I think the staff is right here, the author makes a conclusion based on actual measured evidence in the post, which makes it an analysis rather than a reaction.
+> *Which pile: A*
 
 **2.**
 > *The post:*
->
+> The club championship scoring changed in 2019 from top-6 to top-10. Since then our B team has finished above the A team twice. That's not depth improving, it's the scoring rewarding turnout.
 > *Staff said / I said:*
->
+> analysis / hot_take
 > *My call, and why:*
->
-> *Which pile:*
+> Looking at the rules, I am wrong here. From rule 1 this is analysis, facts are used to support the conclusion. I choose hot take because I didn't think the post provided enough evidence, but thats not what was being asked.
+> *Which pile: A*
 
-**What the pattern in my disagreements tells me:**
+**3.**
+> *The post:*
+> Everyone blames the hill at 18 miles. I split the field into people who ran the first half under 1:45 and over, and the slowdown after 18 was almost identical for both groups. If the hill were the problem the fast starters would fall apart harder.
+> *Staff said / I said:*
+> analysis / hot_take
+> *My call, and why:*
+> I feel like I made the right call here, the author definitely goes into this one with their conclusion already reached from the first sentence. Also "almost identical" is not a checkable fact. I can't verify the actual closeness of the figures from the post alone. The only number given in the 1:45 which is a grouping choice, and not a result. 
+> *Which pile: C*
+
+**4.**
+> *The post:*
+> Carbon plates aren't the whole story. My times dropped 2% in the shoes and another 2% the following year in the same pair, when the only thing that changed was going from 35 to 50 miles a week.
+> *Staff said / I said:*
+> analysis / reaction
+> *My call, and why:*
+> I feel like the staff are right here. The post states that after using carbon plates one year their time dropped by 2%, and the next year it fell the same 2% after they trained on longer distances. This supports the authors claim that carbon plates are not the only way to improve your time. I feel like I could have argued hot take, but it's definitely not a reaction. I still chose analysis because the evidence given is load bearing to the authors argument.
+> *Which pile: A*
+
+**5.**
+> *The post:*
+> Three of us ran the same session on the same day, different shoes, within 10 seconds of each other over 5 miles. I'm not saying shoes do nothing, but whatever they do was smaller than the noise between three people.
+> *Staff said / I said:*
+> analysis / hot_take
+> *My call, and why:*
+> I think the staff are right and this is analysis again. The post has evidence and then a conclusion derived from that evidence, which makes me think it's analysis instead of hot take.
+> *Which pile: A*
+
+**What the pattern in my disagreements tells me: I did not read the rules about analysis as closely as I should have. I did not apply rule 1 consistently, I sometimes judged whether the evidence was strong enough to prove the author's conclusion instead of asking whether the author used the evidence to support that conclusion. Evidence can be debatable while still being load-bearing to an arguemtn.**
 
 
 
