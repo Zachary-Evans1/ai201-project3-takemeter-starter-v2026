@@ -525,21 +525,21 @@ Gaming News: F1 was 0.000, 0.167, and 0.000. Self-Written: F1 was 0.000 for all 
 
 ## The Improvement
 
-**What I changed:**
+**What I changed: I added 30 Self-Written posts to labels.csv myself.**
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it: Criteria 2, the F1 for Self-Written was 0 for all three seeds.**
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall Accuracy of 0.65 | Accuracy >= 0.65 | 0.457 | 0.514  | 0.571 | MISS |
+| 2. Minimum Per-label F1 of 0.55 | F1 Per Label >= 0.55 | Not all pass | Not all pass | Not all pass | MISS |
+| 3. The maximum share of the dataset one label can share is 65% | 65% or Max of 150 posts per label | Max was 105 | - | - | MET |
+| 4. Consistency across seeds | Accuracy spread ≤ 0.10 | 0.114 | 0.114 | 0.114 | MISSED |
+| 5. No Duplicates in Dataset | No Duplicate Posts | PASS | - | - | MET |
 
-**Did it help, and how do I know:**
+**Did it help, and how do I know: It did help the F1 of the Self-written posts in 2 seeds, but it was still 0 for 1 seed meaning it didn't meet the target for criteria 2. Overall it made things worse though, 2/3 seeds overall accuracy went down, the spread went up and now Criteria 4 misses, and it made the F1 for Gaming news even worse. The Fix did not help.**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->

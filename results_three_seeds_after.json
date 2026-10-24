@@ -1,0 +1,164 @@
+[
+  {
+    "seed": 42,
+    "n_test": 35,
+    "accuracy": 0.45714285714285713,
+    "f1_macro": 0.20915032679738563,
+    "per_label": {
+      "Gaming News": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "Game Trailers/Advertisements": {
+        "precision": 0.45714285714285713,
+        "recall": 1.0,
+        "f1": 0.6274509803921569,
+        "support": 16
+      },
+      "Self-Written": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      }
+    },
+    "confusion": {
+      "Gaming News": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 11,
+        "Self-Written": 0
+      },
+      "Game Trailers/Advertisements": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 16,
+        "Self-Written": 0
+      },
+      "Self-Written": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 8,
+        "Self-Written": 0
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.5083900690078735,
+      "mean_when_wrong": 0.4268796741962433,
+      "accuracy_most_confident_third": 1.0,
+      "accuracy_least_confident_third": 0.0,
+      "n_per_third": 11
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  },
+  {
+    "seed": 7,
+    "n_test": 35,
+    "accuracy": 0.5142857142857142,
+    "f1_macro": 0.3510204081632653,
+    "per_label": {
+      "Gaming News": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "Game Trailers/Advertisements": {
+        "precision": 0.48484848484848486,
+        "recall": 1.0,
+        "f1": 0.6530612244897959,
+        "support": 16
+      },
+      "Self-Written": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 8
+      }
+    },
+    "confusion": {
+      "Gaming News": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 11,
+        "Self-Written": 0
+      },
+      "Game Trailers/Advertisements": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 16,
+        "Self-Written": 0
+      },
+      "Self-Written": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 6,
+        "Self-Written": 2
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.46559804677963257,
+      "mean_when_wrong": 0.43009325861930847,
+      "accuracy_most_confident_third": 0.9090909090909091,
+      "accuracy_least_confident_third": 0.36363636363636365,
+      "n_per_third": 11
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  },
+  {
+    "seed": 2024,
+    "n_test": 35,
+    "accuracy": 0.5714285714285714,
+    "f1_macro": 0.4491725768321513,
+    "per_label": {
+      "Gaming News": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "Game Trailers/Advertisements": {
+        "precision": 0.5161290322580645,
+        "recall": 1.0,
+        "f1": 0.6808510638297872,
+        "support": 16
+      },
+      "Self-Written": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    },
+    "confusion": {
+      "Gaming News": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 11,
+        "Self-Written": 0
+      },
+      "Game Trailers/Advertisements": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 16,
+        "Self-Written": 0
+      },
+      "Self-Written": {
+        "Gaming News": 0,
+        "Game Trailers/Advertisements": 4,
+        "Self-Written": 4
+      }
+    },
+    "confidence": {
+      "mean_when_right": 0.5102051496505737,
+      "mean_when_wrong": 0.4476858377456665,
+      "accuracy_most_confident_third": 0.9090909090909091,
+      "accuracy_least_confident_third": 0.36363636363636365,
+      "n_per_third": 11
+    },
+    "device": "cpu",
+    "device_name": "CPU",
+    "torch_version": "2.14.1+cpu",
+    "max_length": 128
+  }
+]
