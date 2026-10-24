@@ -324,6 +324,12 @@ of next unit's variance. -->
 - *What came back: It told me to use Microsoft Excel, as you can convert an Excel file to a comma-delimited CSV file.*
 - *What I changed: I did all the labeling in Excel then converted it to a CSV file, and moved that file into the project folder.*
 
+**Moment 3**
+
+- *What I asked for: I asked Claude what posts I might have mislabeled in my labels.csv file after giving it my definitions.*
+- *What came back: It gave me eight examples where it believes I mislabeled a post.*
+- *What I changed: I didn't change anything because I decided on a different change instead.*
+
 **Pre-labelling disclosure: I did not use the AI to label the posts. I labeled all 200 posts manually.**
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
@@ -552,10 +558,15 @@ Gaming News: F1 was 0.000, 0.167, and 0.000. Self-Written: F1 was 0.000 for all 
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+Criterion 1 - Accuracy: All three seeds are still below 0.65, scoring 0.457, 0.514, and 0.571. I would next review the labels for consistency and inspect examples where the model predicted the wrong category. I stopped because I had already made my one planned improvement for Milestone 5 and did not want to make another change without enough time to rerun and evaluate it across all three seeds.
+Criterion 2 — Per-label F1: not every label reached 0.55. Gaming News had an F1 score of 0 for all three seeds, and Self-Written still had an F1 score of 0 for seed 42. I would investigate why Gaming News posts are being classified as Game Trailers/Advertisements. Also, I would check whether I applied label boundaries consistently. I stopped after the single improvement required for Milestone 5 rather than changing the labels or training setup again.
+Criterion 4 — Consistency: the accuracy spread increased to 0.114, above the 0.10 limit. I would investigate why the model's performance varies so much between seeds. I stopped after completing the three-seed run for my chosen improvement; further investigation would require another experiment.
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
+
+My Confusion matrix shows that the model had difficulty distinguishing between the three categories. For Seed 42 it predicts Game Trailers/Advertisements for every test post, in both runs. This suggests my model learned to favor that category instead of learning the distinctions I intended between my three categories.
 <!-- Two sentences. Your confusion matrix is the evidence. -->
 
 
