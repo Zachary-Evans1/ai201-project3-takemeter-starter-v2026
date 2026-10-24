@@ -413,13 +413,21 @@ Accuracy moved 0.033 across seeds. Stable enough to trust.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall Accuracy of 0.65 | Accuracy >= 0.65 | MISSED | None of the three overall accuracy through the seeds reached 0.65 so this is a miss. |
+| 2 | Minimum Per-label F1 of 0.55 | F1 Per Label >= 0.55 | MISSED | For all three seeds, not all labels passed, so this one was a miss. |
+| 3 | The maximum share of the dataset one label can share is 65% | 65% or Max of 130 posts per label | MET | The highest share one label had was 52% with 104 posts, so this criteria was met. |
+| 4 | Consistency across seeds | Accuracy spread ≤ 0.10 | MET | The consistency across seeds was 0.033 which is less than 0.10, so this passed.|
+| 5 | No Duplicates in Dataset | No Duplicate Posts | MET | There were no duplicate posts in the data set, so this one passed. |
 
 **Diagnoses**
+Criteria 1 - Overall accuracy:
+
+The model reached only 0.500, 0.533, and 0.500, below the 0.65 target in every run. Some possible inconsistencies in labels.csv may make the categories harder for the model to learn. In my Milestone 3 test I found that while I got 83% agreement with the staff labels, I had trouble consistently applying the rules for the analysis label. I think I may have had that problem here. I also asked Claude to check for any labels I may have mislabeled, it came back with 8 examples. I believe this is a labeling issue from this finding, but it may not be the only problem.
+
+
+Criteria 2 - Every Label's F1
+
+Gaming News: F1 was 0.000, 0.167, and 0.000. Self-Written: F1 was 0.000 for all three seeds. The confusion matrix shows the model repeatedly predicting Game Trailers/Advertisements instead of Gaming News or Self-Written. For Self-Written, the amount of data may be too small, only 4 posts were in the training data and the posts only make up 12.5% of the dataset. For Gaming News, the label boundary may be too difficult, or I may have applied it wrong in a few cases. I believe the low F1 scores may be caused by both the small number of Self-Written examples and possible labeling issues with Gaming News.
 
 <!-- For each miss: the cause, and how you know. The four common causes are:
      too few examples for a label, a boundary you applied inconsistently, a
